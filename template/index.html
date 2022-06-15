@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/cute-alert.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script typet="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <h1>WORDLE</h1>
+    <div id="rulediv" class="rule">
+        <button id="rule" class="Btn">Rules</button>
+    </div>
+    <div id="myModel" class="model">
+        <div id="content">
+            <div id="header" class="rule">
+                <h2>Rules to play</h2>
+            </div>
+            <div id="body">
+                <p>1.Guess the <span>WORDLE</span> in six tries</p>
+                <p>2.Each guess must be a valid five-letter word.Hit enter button to submit</p>
+                <p>3.After each guess,the color of the tiles will change to show how close your guess was to the word</p>
+                <p>4.A correct letter turns green</p>
+                <p>5.A correct letter in the wrong place turns yellow</p>
+                <p>6.An incorrect letter turns gray</p>
+                <p>7.Letter can be used more than once</p>
+            </div>
+            <div id="footer" class="rule">
+              <button id="close" class="Btn">I got it</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="board-container">
+        <div id="board"></div>
+    </div>
+    <div id="keyboard-container">
+        <div class="keyboard-row">
+            <button data-key="q">q</button>
+            <button data-key="w">w</button>
+            <button data-key="e">e</button>
+            <button data-key="r">r</button>
+            <button data-key="t">t</button>
+            <button data-key="y">y</button>
+            <button data-key="u">u</button>
+            <button data-key="i">i</button>
+            <button data-key="o">o</button>
+            <button data-key="p">p</button>
+        </div>
+        <div class="keyboard-row">
+            <div class="spacer-half"></div>
+            <button data-key="a">a</button>
+            <button data-key="s">s</button>
+            <button data-key="d">d</button>
+            <button data-key="f">f</button>
+            <button data-key="g">g</button>
+            <button data-key="h">h</button>
+            <button data-key="j">j</button>
+            <button data-key="k">k</button>
+            <button data-key="l">l</button>
+            <div class="spacer-half"></div>
+        </div>
+
+
+        <div class="keyboard-row">
+            <button data-key="enter" class="wide-button" id="a">Enter</button>
+            <button data-key="z">z</button>
+            <button data-key="x">x</button>
+            <button data-key="c">c</button>
+            <button data-key="v">v</button>
+            <button data-key="b">b</button>
+            <button data-key="n">n</button>
+            <button data-key="m">m</button>
+            <button data-key="del" class="wide-button">Del</button>
+        </div>
+    </div> 
+
+    <script src="/static/cute-alert.js"></script>
+
+</body>
+
+<script src="/static/index.js"></script>
+
+</html>

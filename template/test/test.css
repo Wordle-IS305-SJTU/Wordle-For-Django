@@ -1,0 +1,98 @@
+/* 增加背景图 */
+body {
+    background: url("Users/yunchen/Desktop/2022-06-03_011533_690.jpg ") center; /* 首先增加背景图 */
+    background-size: 100% auto; /* 设置背景的大小 */
+    background-repeat: no-repeat; /* 将背景设置为不重复显示 */
+}
+
+
+h1,#a{
+
+    text-align:center;
+}
+
+
+#board-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-grow:1;
+    overflow:hidden
+}
+    
+    
+ #board{
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:5px;
+    padding:10px;
+}
+    
+.square{
+    border:2px solid gray;
+    width:50px;
+    height:50px;
+    text-transform:uppercase;
+    font-size:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    
+#keyboard-container{
+
+    height:200px;
+}
+    
+.keyboard-row{
+    display:flex;
+    justify-content: center;
+    width:30%;
+    margin:0 auto 8px;
+    touch-action: manipulation;
+}
+    
+.keyboard-row  button {
+    font-family:inherit;                    /*字体特性：继承*/
+    font-weight:bold;                      /*字体粗细：粗体；*/
+    border:0;                               /*边界：0*/
+    padding:0;                              /*填充：0*/
+    height:38px;                            /*高度：38px*/
+    cursor:pointer;                         /*光标：指针*/
+    flex-grow:1;                        /*fiex增长系数：1*/
+    text-transform:uppercase;               /*文本转换：大写*/
+    margin-right:6px;                           /*右边距：6px */
+    border-radius:4px;                   /*边框半径：4px */
+    user-select:none;
+}
+    
+
+.keyboard-row  button {
+    background-color: white;
+    color: black;
+    border: 2px solid #5b7b5c; 
+}
+
+.keyboard-row  button:hover {
+    background-color: #e763de;
+
+    color: white;
+}
+
+.keyboard-row  button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.keyboard-row  button {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.keyboard-row button.wide-button{
+    flex-grow:1.5;
+}
+    
+.space-half{
+    flex-grow:0.5
+}
